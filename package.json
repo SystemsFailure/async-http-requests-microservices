@@ -4,7 +4,8 @@
   "description": "Для локального развертывания проекта, выполните следующие шаги:\r - Клонируйте репозиторий на локальную машину: `git clone <url репозитория>`\r - Установите зависимости проекта: `npm install`\r - Запустите микросервис М1 для обработки входящих HTTP запросов: `npm run start:m1`\r - Запустите микросервис М2 для обработки заданий из RabbitMQ: `npm run start:m2`",
   "main": "index.js",
   "scripts": {
-    "start": "node app.js",
+    "start:m1": "node app.js",
+    "start:m2": "node microservice2.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
